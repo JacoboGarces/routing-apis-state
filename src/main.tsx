@@ -1,13 +1,13 @@
 import ReactDOM from 'react-dom/client'
 import './index.css'
-import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+import { RouterProvider, createHashRouter } from 'react-router-dom'
 import { Home } from './pages/Home'
 import { Auth } from './pages/Auth'
 import { Layout } from './components/Layout'
 import { AppProvider } from './state/AppContext'
 import { ProtectedRoute } from './ProtectedRoute'
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: '',
     Component: Layout,
